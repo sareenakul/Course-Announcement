@@ -1,0 +1,10 @@
+.songItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete{
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px black dotted
+}
