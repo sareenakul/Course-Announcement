@@ -11,9 +11,8 @@ class SongList extends Component{
         this.props.mutate({
             variables:{
                 id: songId
-            },
-            refetchQueries: [{query: query}]
-        });
+            }
+        }).then(this.props.data.refetch());
     }
 
     renderSongs(){
@@ -22,7 +21,9 @@ class SongList extends Component{
                 <li key={song.id} className="collection-item">
                     <div className="songItem">
                         {song.title}
-                        <button className="delete" onClick={(event)=> this.handleDelete(event ,song.id)}>Delete</button>
+                        <div className="point">
+                            <i className="material-icons" onClick={(event)=> this.handleDelete(event ,song.id)}>delete</i>
+                        </div>
                     </div>
                 </li>
             );
@@ -39,6 +40,7 @@ class SongList extends Component{
 
         return(
             <div>
+                <h1 className="title">My Notes</h1>
                 <ul className="collection">
                     {this.renderSongs()}
                 </ul>

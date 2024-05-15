@@ -3,8 +3,12 @@
     justify-content: space-between;
 }
 
-.delete{
-    background-color: bisque;
-    border-radius: 10px;
-    border: 1px black dotted
+.point{
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: serif;
 }
