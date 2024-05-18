@@ -12,3 +12,8 @@
     justify-content: center;
     font-family: serif;
 }
+
+.posi{
+    display: flex;
+    justify-content: space-between;
+}

@@ -31,6 +31,7 @@ const songByID = gql`
             lyrics {
                 id
                 content
+                likes
             }
         }
     }
