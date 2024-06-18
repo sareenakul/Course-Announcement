@@ -25,7 +25,7 @@ class LyricCreate extends Component{
     render(){
         return(
             <form onSubmit={this.onSubmit.bind(this)}>
-                <label>Add a Lyric</label>
+                <label>Add contents of Announcement</label>
                 <input value={this.state.content} onChange={
                     event => this.setState({content: event.target.value})
                 }/>
